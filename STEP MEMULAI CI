@@ -1,0 +1,18 @@
+STEP MEMULAI CI
+1. download codeigniter
+2. set config url "http://localhost/namafolder"
+3. buat file .htaccess
+		RewriteEngine on
+		RewriteCond $1 !^(index\.php|assets|images|js|css|uploads|favicon.png)
+		RewriteCond %(REQUEST_FILENAME) !-f
+		RewriteCond %(REQUEST_FILENAME) !-d
+		RewriteRule ^(.*)$ ./index.php/$1 [L]
+4. buat template (view) -> header, footer
+5. buat pages (controller), buat fungsi untuk menampilkan halaman yang didalamnya mencantumkan template 
+6. buat folder page (view) -> header, footer
+7. buat routenya agar bisa dipanggil dengan nama halamannya langsung, tanpa pathnya
+8. buat Obyek (controller), buat fungsi untuk mengambil data
+9. buat folder obyek (view) -> header, footer
+10. buat modelnya (jan lupa ditulis di autoload)
+11. pasang 'form' di autoload helper (untuk inputan) & 'form_validation' di autoload libraries
+12. 
